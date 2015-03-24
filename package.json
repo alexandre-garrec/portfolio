@@ -2,7 +2,8 @@
   "name": "",
   "version": "0.0.1",
   "dependencies": {
-    "firebase": "^2.1.0"
+    "firebase": "^2.1.0",
+    "gulp-browserify": "^0.5.1"
   },
   "devDependencies": {
     "browser-sync": "~1.5.8",
