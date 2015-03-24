@@ -13,6 +13,8 @@ var handleErrors = require('./gulp/handleErrors');
 
 gulp.task('default', ['watch' , 'browser-sync']);
 
+gulp.task('build', []);
+
 gulp.task('watch' , ['less', 'react'], function(){
 
     gulp.watch('app/style/*.less', ['less']);
