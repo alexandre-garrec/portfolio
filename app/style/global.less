@@ -1,0 +1,45 @@
+.clearFix{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.clickable {
+    &:hover {
+        cursor                  : pointer; 
+    }
+    &:focus {
+        cursor                  : pointer; 
+    }
+    &:active {
+        cursor                  : pointer;
+    }
+}
+
+.transitions(@prop : all; @duration : .5s; @easing : ease) {
+    -webkit-transition          : @prop @duration @easing;
+    -moz-transition             : @prop @duration @easing;
+    -ms-transition              : @prop @duration @easing;
+    -o-transition               : @prop @duration @easing;
+    transition                  : @prop @duration @easing;
+}
+
+.addPicto(@url){
+    background-image: url(@url);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rotate(@deg){
+    transform: rotate(@deg);
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+}
+
+.scale(@ratio) {
+  -webkit-transform: scale(@ratio);
+      -ms-transform: scale(@ratio); // IE9 only
+       -o-transform: scale(@ratio);
+          transform: scale(@ratio);
+}
