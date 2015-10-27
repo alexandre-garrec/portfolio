@@ -1,0 +1,1 @@
+php wp-brute.php http://localhost/wordpress/wp-login.php root lib/passlist.txt

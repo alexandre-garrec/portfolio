@@ -1,18 +1,11 @@
-
-/* Large desktop */
-@media only screen and (min-width: 1200px) { 
-
- }
+/* media.less */
  
-/* Portrait tablet to landscape and desktop */
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media (max-width: 730px) {
 
-}
- 
-/* Landscape phone to portrait tablet */
-@media only screen and (max-width: 767px) {
-        .part5{
-        display: none !important;
+    .contain{
+        width: 90% !important;
+        text-align: center;
+        margin: 20px;
     }
 
      .menu{
@@ -34,42 +27,26 @@
     }
 
 }
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-
-        .part5{
-        display: none !important;
-    }
-  .menu{
-        p{
-            font-size: 0px;
-        }
-        ul{
-            margin-right: 0px;
-        }
-    }
 
 
-    .col-1{ width: 100%; }
-    .col-2{ width: 100%;}
-    .col-3{ width: 100%;}
-    .col-4{ 
-        width: 90%;
-        padding: 30px 20px;
+@media (max-width: 580px) {
+    h1{
+        font-size: 30px !important;
     }
-}
-/* Landscape phones and down */
-@media only screen and (max-width: 480px) {
-        .part5{
-        display: none !important;
-    }
+
     .menu{
         p{
             font-size: 0px;
         }
         ul{
             margin-right: 0px;
+        }
+    }
+
+    .part1{
+        height: 500px !important;
+        .button_warpper{
+             margin-top: 100px !important;
         }
     }
 

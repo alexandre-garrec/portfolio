@@ -1,0 +1,43 @@
+/* header.less */
+
+.Head{
+    
+    .transitions(all, 500ms);
+
+    background-image: url('../img/53.gif');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    background-color: lighten(@other, 5%);
+
+    p, h1{
+        color: #fff;
+    }
+
+    .button_warpper{
+        margin-top: 200px;
+        display: block;
+        margin : 200px auto 0px auto;
+        width: 193px;
+
+        .fa {
+            display: inline-block;
+            text-align: center;
+            color : @main;
+            font-size: 60px;
+
+            padding : 20px;
+            
+            &:hover{
+                color: darken(@main , 10%);
+            }
+
+        }
+    }
+   
+    button{
+        margin-top: 20px;
+        width: 200px;
+    }
+}

@@ -5,7 +5,11 @@
     "firebase": "^2.1.0",
     "gulp-browserify": "^0.5.1",
     "gulp-rename": "^1.2.0",
-    "reactify": "^1.1.0"
+    "lodash": "^3.10.1",
+    "react": "^0.13.3",
+    "react-router": "^0.13.4",
+    "reactify": "^1.1.0",
+    "superagent": "^1.4.0"
   },
   "devDependencies": {
     "browser-sync": "~1.5.8",

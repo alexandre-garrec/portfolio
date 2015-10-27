@@ -1,11 +1,11 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var react = require('gulp-react');
-var browserify = require('gulp-browserify');
-var rename = require("gulp-rename");
-var reactify = require('reactify');
-var notify = require("gulp-notify");
-var browserSync = require('browser-sync');
+var gulp         = require('gulp');
+var less         = require('gulp-less');
+var react        = require('gulp-react');
+var browserify   = require('gulp-browserify');
+var rename       = require("gulp-rename");
+var reactify     = require('reactify');
+var notify       = require("gulp-notify");
+var browserSync  = require('browser-sync');
 
 
 var handleErrors = require('./gulp/handleErrors');

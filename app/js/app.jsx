@@ -1,37 +1,51 @@
-window.React = require('react');
-window.Firebase = require('firebase');
+// Global
+window.React            = require('react');
+window._                = require('lodash');
 
-var MainComponent = require('./components/MainComponent.jsx');
-var MenuComponent = require('./components/MenuComponent.jsx');
-var PopupComponent = require('./components/PopupComponent.jsx');
+// Components
+var MainComponent       = require('./components/MainComponent.jsx');
+var MenuComponent       = require('./components/MenuComponent.jsx');
+var ProjectComponent    = require('./components/ProjectComponent.jsx');
+var ProjectsComponent   = require('./components/ProjectsComponent.jsx');
+var AboutComponent      = require('./components/AboutComponent.jsx');
+
+// Router
+var Router              = require('react-router');
+var Route               = Router.Route;
+var Handler             = Router.RouteHandler;
+var DefaultRoute        = Router.DefaultRoute;
 
 
-
+// Default components
 var App = React.createClass({
-
-    getInitialState: function() {
-        return {
-            activePopup: ""
-       };
-    },
-
-    setActvePopup: function(txt){
-        this.setState({activePopup:txt});
-    },
-  render: function() {
-    return (
-      <div>
-        <PopupComponent setPopup={this.setActvePopup} popup={this.state.activePopup}/>
-        <MenuComponent popup={this.state.activePopup}/>
-        <MainComponent popup={this.state.activePopup} setPopup={this.setActvePopup}/>
-      </div>
-    );
-  }
+    render: function () {
+        return (
+            <div>
+                <MenuComponent/>
+                <Handler/>
+            </div>
+        );
+    }
 });
 
 
+// Routes
+var routes = (
+    <Route path="/" handler={App}>
+    
+        <DefaultRoute handler={MainComponent} />
+
+        <Route path="projects"      name="projects" handler={ProjectsComponent} />
+        <Route path="about"         name="about"    handler={AboutComponent} />
+        <Route path="projects/:id"  name="project"  handler={ProjectComponent} />
+    </Route>
+);
+
+
+// Router run
+Router.run(routes, function (Handler) {
+    React.render(<Handler />, document.getElementById('main-js'));
+});
+
 
 module.exports = App;
-
-
-React.render(<App />, document.getElementById('main-js'));

@@ -1,21 +1,41 @@
+/*
+* 
+* Copyright (c) 2015 All rights reserved.
+*
+*/
+
+// Datas
+var data              = require('../data');
+
+// Mixins
+var Navigation   = require("react-router").Navigation;
+
 var MenuComponent  = React.createClass({
+
+    /************************************ INITIALIZATION ***********************************/
+    
+    mixins: [ Navigation ],
+
+    /**************************************** RENDER ***************************************/
 
     render: function() {
         return (
-         <div className={"menu " + this.props.popup}>
+         <div className={"Menu"}>
                 <div className="contain">
-                    <p>Alexandre Garrec</p>
-
+                    <a href='#/'><p>{data.name}</p></a>
                     <ul>
-                        <li>Home</li>
-                        <li>Portofolio</li>
-                        <li>Diplomes</li>
-                        <li>Contact</li>
+                        <a href='#/'><li>Home</li></a>
+                        <a href='#/projects' ><li>Portofolio</li></a>
+                        <a href='#/about' ><li>About</li></a>
                     </ul>
                 </div>
             </div>
         );
-    }
+    },
+
+    /********************************* COMPONENT LIFECYCLE *********************************/
+
+    /************************************ CUSTOM METHODS ***********************************/
 
 });
 
