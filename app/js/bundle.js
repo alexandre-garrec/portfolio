@@ -556,7 +556,9 @@ var App = React.createClass({displayName: "App",
         return (
             React.createElement("div", null, 
                 React.createElement(MenuComponent, null), 
-                React.createElement(Handler, null)
+                React.createElement("div", {className: "wrapper"}, 
+                    React.createElement(Handler, null)
+                )
             )
         );
     }

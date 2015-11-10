@@ -22,7 +22,9 @@ var App = React.createClass({
         return (
             <div>
                 <MenuComponent/>
-                <Handler/>
+                <div className="wrapper">
+                    <Handler/>
+                </div>
             </div>
         );
     }
