@@ -1720,15 +1720,19 @@
 }
 /* media.less */
 @media (max-width: 730px) {
+  .Markdown {
+    text-align: left;
+    word-break: break-word;
+  }
   .contain {
     width: 90% !important;
     text-align: center;
     margin: 20px;
   }
-  .menu p {
+  .Menu p {
     font-size: 0px;
   }
-  .menu ul {
+  .Menu ul {
     margin-right: 0px;
   }
   .col-1 {
@@ -1746,19 +1750,23 @@
   }
 }
 @media (max-width: 580px) {
+  .Project .Image {
+    width: 100%;
+    height: auto !important;
+  }
   h1 {
     font-size: 30px !important;
   }
-  .menu p {
-    font-size: 0px;
+  .Menu p {
+    display: none !important;
   }
-  .menu ul {
+  .Menu ul {
     margin-right: 0px;
   }
-  .part1 {
-    height: 500px !important;
+  .Head {
+    height: 520px !important;
   }
-  .part1 .button_warpper {
+  .Head .button_warpper {
     margin-top: 100px !important;
   }
   .col-1 {
@@ -1777,7 +1785,7 @@
 }
 /* about.less */
 .About {
-  padding-top: 100px;
+  padding: 100px;
 }
 .About_me {
   background-color: #f4f4f4;
@@ -1878,6 +1886,7 @@
 }
 .Menu a {
   color: #ffffff;
+  margin-left: 5px;
 }
 .Menu p {
   display: inline-block;
@@ -1912,7 +1921,7 @@
 }
 /* project.less */
 .Project {
-  padding-top: 80px;
+  padding: 100px 0px;
   /* Projects */
 }
 .Project h2 {
@@ -2020,7 +2029,6 @@ body {
   padding: 0px;
 }
 a {
-  margin-left: 5px;
   color: #666666;
 }
 a:hover {
@@ -2028,7 +2036,6 @@ a:hover {
 }
 ul {
   list-style: none;
-  margin-left: 50px;
 }
 p,
 ul {

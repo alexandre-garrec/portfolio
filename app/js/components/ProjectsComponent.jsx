@@ -53,25 +53,23 @@ var ProjectsComponent = React.createClass({
         var self = this;
 
         return (
-            <div className="col-2">
-                <div className={"Thubmail " + (n.image.length ? "" : "Locked")} onClick={ n.image.length ? _.bind(self._showModal , self , n.id) : null }>
-                    <div>
-                        <i className={"fa " + n.ico}></i>
-                        <p className="title">{n.title}</p>
+            <a href={n.title != "Locked" ? ("#/projects/" + n.id) : null}>
+                <div className="col-2">
+                    <div className={"Thubmail " + (n.image.length ? "" : "Locked")} >
+                        <div>
+                            <i className={"fa " + n.ico}></i>
+                            <p className="title">{n.title}</p>
+                        </div>
+                        <img src={n.image} />
                     </div>
-                    <img src={n.image} />
                 </div>
-            </div>
+            </a>
         );
     },
 
     /********************************* COMPONENT LIFECYCLE *********************************/
 
     /************************************ CUSTOM METHODS ***********************************/
-
-    _showModal: function(id){
-         this.transitionTo('/projects/'+id);
-    },
 
 });
 
