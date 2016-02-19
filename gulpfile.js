@@ -55,8 +55,7 @@ gulp.task('minify-html', function() {
     .pipe(gulp.dest('./prod'));
 });
 
-gulp.task('prod' , ['less', 'compressJs', 'minify-css' , "minify-html" ] , function () {
-})
+gulp.task('prod' , ['less', 'compressJs', 'minify-css' , "minify-html" ] , function () {})
 
 
 gulp.task('watch' , ['less', 'react'], function(){

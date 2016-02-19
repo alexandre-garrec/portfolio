@@ -1,8 +1,25 @@
-#Portfolio
+Portfolio
+===
 
 Portfolio achieve in ReactJs editable through a json file
 
 ![Home](http://garreca.fr/img/home.png)
+
+Install
+-------
+
+In the project's directory, run the following commands:
+
+    $ gulp
+
+Releasing to Production
+
+HTML ,  SCRIPT and css compressed.
+
+In the project's directory, run the following commands:
+
+    $ gulp prod
+
 
 Technical
 ---------
@@ -10,7 +27,7 @@ Technical
 Languages
 
  - Javascript
- - 	Less
+ -  Less
 
 Dependency
 
@@ -36,3 +53,8 @@ Pages
  - About
 
 Each project has a dedicated page
+
+License
+-------
+
+[MIT License](https://opensource.org/licenses/MIT)

@@ -197,7 +197,7 @@ var MenuComponent  = React.createClass({displayName: "MenuComponent",
                     React.createElement("a", {href: "#/"}, React.createElement("p", null, data.name)), 
                     React.createElement("ul", null, 
                         React.createElement("a", {href: "#/"}, React.createElement("li", null, "Home")), 
-                        React.createElement("a", {href: "#/projects"}, React.createElement("li", null, "Portofolio")), 
+                        React.createElement("a", {href: "#/projects"}, React.createElement("li", null, "Portfolio")), 
                         React.createElement("a", {href: "#/about"}, React.createElement("li", null, "About"))
                     )
                 )

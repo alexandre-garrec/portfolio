@@ -25,7 +25,7 @@ var MenuComponent  = React.createClass({
                     <a href='#/'><p>{data.name}</p></a>
                     <ul>
                         <a href='#/'><li>Home</li></a>
-                        <a href='#/projects' ><li>Portofolio</li></a>
+                        <a href='#/projects' ><li>Portfolio</li></a>
                         <a href='#/about' ><li>About</li></a>
                     </ul>
                 </div>
