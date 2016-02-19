@@ -7,6 +7,9 @@
 // Datas
 var data        = require('../data');
 
+// Components
+var FooterComponent = require("./FooterComponent.jsx");
+
 // Utils
 var request     = require('superagent');
 var marked      = require('marked');
@@ -32,11 +35,14 @@ var ProjectComponent = React.createClass({
         var content     = this.state.project.repoName ? this._displayReadMe() : this._displayDescription();
 
         return (
+            <div>
             <div className={"Project"}>
                 <div className="contain">
-                    <img src={this.state.project.image} />
+                    <img className="Image" src={this.state.project.image} />
                     {content}
                 </div>
+            </div>
+            <FooterComponent />
             </div>
         );
     },

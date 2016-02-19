@@ -32,7 +32,7 @@ var MainComponent  = React.createClass({
                     <div className="contain">
                         <h1>{data.name}</h1>
                         <p>{data.about}</p>
-                        <button>Telecharger CV</button>
+                        {/*<button>Telecharger CV</button>*/}
                         <div className="button_warpper">
                             <a href={data.github.url} ><i className="fa fa-github"></i></a>
                             <a href={data.linkedin.url} ><i className="fa fa-linkedin-square"></i></a>

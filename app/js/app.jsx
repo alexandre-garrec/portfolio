@@ -43,9 +43,12 @@ var routes = (
     </Route>
 );
 
+require('prerender-node').shouldShowPrerenderedPage = function(){ return true }
+
+require('prerender-node').set('prerenderToken', 'sRGHUJBcewSL4dnRd9vW')
 
 // Router run
-Router.run(routes, function (Handler) {
+Router.run(routes , function (Handler) {
     React.render(<Handler />, document.getElementById('main-js'));
 });
 
