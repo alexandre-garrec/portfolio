@@ -46,7 +46,7 @@ Links to social network
 
 Responsive website
 
-Github readme are automatically retrieved thanks to the url projects.
+Github readme are automatically retrieved thanks to the projects url.
 
 Pages
 -----
