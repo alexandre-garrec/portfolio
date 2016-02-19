@@ -8,11 +8,13 @@ Portfolio achieve in ReactJs editable through a json file
 Install
 -------
 
+**Development**
+
 In the project's directory, run the following commands:
 
     $ gulp
 
-Releasing to Production
+**Releasing to Production**
 
 HTML ,  SCRIPT and css compressed.
 
